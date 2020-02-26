@@ -16,11 +16,13 @@ public class NumberService {
     }
 
     public int rangeEvenCount(int start, int finish) {
+
         if(start > finish){
             int tempValue = start;
             start = finish;
             finish = tempValue;
         }
+
         int oddCount = 0;
         for (int i=start; i<=finish; i++){
             if(i % 2 == 0){
@@ -30,7 +32,5 @@ public class NumberService {
 
         return oddCount;
     }
-
-
 
 }
